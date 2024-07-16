@@ -27,3 +27,5 @@ dist-ssr
 build
 coverage
 stats.html
+
+*storybook.log

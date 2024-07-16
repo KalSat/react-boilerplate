@@ -3,9 +3,22 @@ import { TypographyOptions, TypographyStyleOptions } from '@mui/material/styles/
 interface CustomTypographyOptions extends TypographyOptions {
   label1?: TypographyStyleOptions
   label2?: TypographyStyleOptions
+  h7?: TypographyStyleOptions
 }
 
 const typography: CustomTypographyOptions = {
+  fontFamily: [
+    '-apple-system',
+    'BlinkMacSystemFont',
+    '"Segoe UI"',
+    'Roboto',
+    '"Helvetica Neue"',
+    'Arial',
+    'sans-serif',
+    '"Apple Color Emoji"',
+    '"Segoe UI Emoji"',
+    '"Segoe UI Symbol"',
+  ].join(','),
   h1: {
     fontSize: '96px',
     fontWeight: 300,
@@ -35,6 +48,11 @@ const typography: CustomTypographyOptions = {
     fontSize: '20px',
     fontWeight: 600,
     lineHeight: '32px',
+    letterSpacing: '0.15px',
+  },
+  h7: {
+    fontSize: '18px',
+    fontWeight: 600,
     letterSpacing: '0.15px',
   },
   subtitle1: {
@@ -76,7 +94,7 @@ const typography: CustomTypographyOptions = {
   button: {
     fontSize: '16px',
     fontWeight: 600,
-    lineHeight: '28px',
+    lineHeight: '24px',
     letterSpacing: '0.15px',
   },
   label1: {

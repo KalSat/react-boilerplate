@@ -3,7 +3,6 @@ import viteLogo from '/vite.svg'
 import { HOME_PATH, POSTS_PATH } from '@/global/routes/routePaths'
 
 const Header = () => {
-
   return (
     <header>
       <nav className="bg-zinc-100 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
@@ -70,14 +69,6 @@ const Header = () => {
                   to={POSTS_PATH}
                 >
                   Post
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0 dark:text-white"
-                  to={POSTS_PATH}
-                >
-                  LiveChat
                 </Link>
               </li>
             </ul>

@@ -8,6 +8,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'prettier',
+    'plugin:storybook/recommended'
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -42,6 +43,6 @@ module.exports = {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
     '@typescript-eslint/no-unsafe-assignment': 'off',
-    '@typescript-eslint/no-explicit-any': ['error', { ignoreRestArgs: true }]
+    '@typescript-eslint/no-explicit-any': ['error', { ignoreRestArgs: true }],
   },
 }
